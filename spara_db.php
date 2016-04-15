@@ -11,7 +11,7 @@
 
             //Ta emot data från formuläret
             $rubrik = $_POST['rubrik'];
-            $inlagg = $_POST['inlagg'];
+            $inlagg = nl2br($_POST['inlagg'], false)
             //databasuppgifter
             $host = 'localhost';
             $user = 'osterberg_user';
